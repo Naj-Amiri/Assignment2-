@@ -21,7 +21,7 @@ public class Assignment5 {
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.name("companyName")).sendKeys("Moh LLC");
 		driver.findElement(By.cssSelector("input[name='companyWebsite'")).sendKeys("www.MohLLC.com");
-		driver.findElement(By.xpath("//input[@name='phoneNo']")).sendKeys("5103987029");
+		driver.findElement(By.xpath("//input[@name='phoneNo']")).sendKeys("+15103987029");
 		//driver.findElement(By.xpath("//input[@name='phoneNo']")).click();
 		// index x path counting the number of spaces on the page if possible .
 		// com name,com web,phon,com add. is located on 4th place we can add index number 4 to find element.
@@ -30,7 +30,7 @@ public class Assignment5 {
 		Thread.sleep(4000);
 		driver.findElement(By.cssSelector("button[aria-label='close']")).click();
 		//driver.findElement(By.xpath("(//span[@class='MuiTouchRipple-root'])[7]")).click();
-		driver.findElement(By.name("otherNo")).sendKeys("5103878879");
+		driver.findElement(By.name("otherNo")).sendKeys("+15103878879");
 		driver.findElement(By.name("zipcode")).sendKeys("95824");
 		driver.findElement(By.xpath("(//input[@type='text'])[7]")).click();
 		driver.findElement(By.name("fbId")).sendKeys("najeeb Amiri");

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class FacebookDemo 
 {
@@ -20,6 +21,7 @@ public class FacebookDemo
 
 		WebElement pwd = driver.findElement(By.id("pass"));
 		pwd.sendKeys("test");
+	
 
 		// u_0_d_fO---- u_0_d_KN ID has be change every single time you refresh it .
 		// that is why we should go by name and log in.
