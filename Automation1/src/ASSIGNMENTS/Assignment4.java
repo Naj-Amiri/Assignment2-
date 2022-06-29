@@ -27,9 +27,6 @@ public class Assignment4 {
 			driver.findElement(By.xpath("//input[@value='Search']")).click();
 			System.out.println("Done");
 			
-			
-			
-			
 
 	}
 
