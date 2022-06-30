@@ -18,8 +18,9 @@ public class Assignment2 {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("http://www.fb.com");
+		driver.manage().window().fullscreen();
 		//System.out.println(driver.getCurrentUrl());
-		// verify the current - Im not sure if this is correct or not. we need to discuss about it.
+		//verify the current - Im not sure if this is correct or not. we need to discuss about it.
 		
 		Assert.assertEquals("https://www.facebook.com/",driver.getCurrentUrl());
 		
