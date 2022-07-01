@@ -20,6 +20,8 @@ public class Assignment1 {
 		driver.manage().window().maximize();
 		driver.get("https://vitshr.com");
 		
+		
+		
 		String expect="VITS HR";
 		String Actual= driver.getTitle();		
 		Assert.assertEquals(Actual, expect);
