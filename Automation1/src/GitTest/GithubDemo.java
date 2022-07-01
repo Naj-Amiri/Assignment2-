@@ -10,6 +10,7 @@ public class GithubDemo {
 		
 		System.setProperty("webdriver.gecko.driver", "/Users/naj/Drivers/geckodriver/");
 		WebDriver driver = new FirefoxDriver();
+		System.out.println("hello everyone");
 		driver.close();
 		
 		
