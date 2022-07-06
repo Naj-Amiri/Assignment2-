@@ -20,7 +20,7 @@ public class Assignment1 {
 		driver.manage().window().maximize();
 		driver.get("https://vitshr.com");
 		
-		
+		// this is just for test ...
 		
 		String expect="VITS HR";
 		String Actual= driver.getTitle();		
