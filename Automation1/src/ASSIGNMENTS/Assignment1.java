@@ -1,11 +1,11 @@
 package ASSIGNMENTS;
+
+
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-
 public class Assignment1 {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -13,8 +13,8 @@ public class Assignment1 {
 		
 		// VITS HR title verfication and Facebook.
 		
-		System.setProperty("webdriver.gecko.driver", "/Users/naj/Drivers/geckodriver/");
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:\\Recup Selenium\\drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		
 		driver.manage().window().maximize();
@@ -23,7 +23,8 @@ public class Assignment1 {
 		// this is just for test ...
 		
 		String expect="VITS HR";
-		String Actual= driver.getTitle();		
+		String Actual= driver.getTitle();
+		
 		Assert.assertEquals(Actual, expect);
 		driver.get("https://www.facebook.com");
 		driver.get("https://vitshr.com");
