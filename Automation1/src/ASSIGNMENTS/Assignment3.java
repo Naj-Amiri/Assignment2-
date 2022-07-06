@@ -13,7 +13,7 @@ public class Assignment3 {
 		//needs to methods count the links on web page and print link text and urls. 
 		// I can't go forward.
 		
-		System.setProperty("webdriver.chrome.driver" , "/Users/naj/Drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/Users/naj/Drivers/chromedriver");
 		WebDriver driver =new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		String url = "https://www.flikart.com";
