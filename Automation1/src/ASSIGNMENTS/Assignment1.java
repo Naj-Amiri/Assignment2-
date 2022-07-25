@@ -13,7 +13,7 @@ public class Assignment1 {
 		
 		// VITS HR title verfication and Facebook.
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\Recup Selenium\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/naj/Drivers/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		
